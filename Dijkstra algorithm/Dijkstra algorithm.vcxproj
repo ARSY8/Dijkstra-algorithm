@@ -128,6 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="FileReaderWriter.cpp" />
+    <ClCompile Include="FileReaderWriter.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra.hpp" />
