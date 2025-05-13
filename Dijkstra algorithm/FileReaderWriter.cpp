@@ -25,6 +25,7 @@ void ReaderWriter::fileReader(const std::string& fileName, std::unordered_map<st
 			data[city1].push_back({ city2, weight });
 			data[city2].push_back({ city1, weight });
 		}
+		ifs.close();
 	}
 	else {
 		throw std::runtime_error("Не удалось открыть файл для чтения");
