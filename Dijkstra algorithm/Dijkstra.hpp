@@ -8,7 +8,6 @@ using std::vector;
 using std::string;
 using std::pair;
 
-
 class Dijkstra {
 	unordered_map<string, vector<pair<string, unsigned int>>>& adjList;
 	unordered_map<string, unsigned int> dist;
