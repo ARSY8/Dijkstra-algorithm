@@ -1,0 +1,6 @@
+Moscow 0
+Novosibirsk 7
+Kiev 20
+Toronto 9
+Omsk 20
+Krasnoyarsk 11

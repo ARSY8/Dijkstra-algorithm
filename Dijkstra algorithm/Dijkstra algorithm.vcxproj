@@ -131,9 +131,13 @@
     <ClCompile Include="Dijkstra.cpp" />
     <ClCompile Include="FileReaderWriter.cpp" />
     <ClCompile Include="FileReaderWriter.hpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dijkstra.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="graph.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
