@@ -1,16 +1,14 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
+#include <utility>
 
-using std::unordered_map;
-using std::vector;
-using std::string;
-using std::pair;
 
-class ReaderWriter {
+class ReaderWriter final{
 	ReaderWriter() = delete;
 	~ReaderWriter() = delete;
 public:
-	static void fileReader(const string& fileName, unordered_map<string, vector<pair<string, unsigned int>>>& data);
-	static void fileWriter(unordered_map<string, unsigned int>& data);
+	static std::unordered_map<std::string, std::vector<std::pair<std::string, unsigned int>>> fileReader
+																			(const std::string& fileName);
+	static void fileWriter(const std::pair<std::vector<std::string>, unsigned int>& data, std::ofstream& ofs);
 };

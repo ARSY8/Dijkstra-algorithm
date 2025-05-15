@@ -3,22 +3,18 @@
 #include <string>
 
 
-using std::unordered_map;
-using std::vector;
-using std::string;
-using std::pair;
-
-class Dijkstra {
-	unordered_map<string, vector<pair<string, unsigned int>>>& adjList;
-	unordered_map<string, unsigned int> dist;
-	string start;
-
+class Dijkstra final{
+	std::unordered_map<std::string, std::vector<std::pair<std::string, unsigned int>>>& adjList;
+	std::unordered_map<std::string, unsigned int> dist;
+	std::unordered_map<std::string, std::string> from;
+	std::string start;
+	std::string final;
 public:
-	Dijkstra(unordered_map<string, vector<pair<string, unsigned int>>>& adjList_, string start_);
+	Dijkstra(std::unordered_map<std::string, std::vector<std::pair<std::string, unsigned int>>>& adjList_, std::string start_,
+																									  std::string final_);
 
-	unordered_map<string, unsigned int> getPath();
+	const std::pair<std::vector<std::string>, unsigned int> getPath() const;
 
 private:
 	void dijkstra();
 };
-
