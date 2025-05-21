@@ -15,7 +15,7 @@ using std::string;
 using std::pair;
 
 Dijkstra::Dijkstra(unordered_map<string, vector<pair<string, unsigned int>>>& adjList_, string start_,
-																						string final_) : adjList(adjList_){
+											string final_) : adjList(adjList_){
 	start = start_;
 	final = final_;
 	dijkstra();
